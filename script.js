@@ -75,11 +75,11 @@ function updateTimer() {
     seconds++;
     const minutes = Math.floor(seconds / 60);
     const remainingSeconds = seconds % 60;
-    timerDisplay.textContent = `Time: ${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
+    timerDisplay.textContent = `Tiempo: ${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
 }
 
 function updateScore() {
-    scoreDisplay.textContent = `Score: ${score}`;
+    scoreDisplay.textContent = `Puntos: ${score}`;
 }
 
 function startGame() {
@@ -110,7 +110,7 @@ function resetGame() {
 function endGame() {
     clearInterval(timer);
     gameStarted = false;
-    alert(`Congratulations! You won!\nTime: ${timerDisplay.textContent}\nScore: ${score}`);
+    alert(`Felicitaciones! Haz ganado!\nTiempo: ${timerDisplay.textContent}\nPuntos: ${score}`);
 }
 
 function createParticles(element) {
